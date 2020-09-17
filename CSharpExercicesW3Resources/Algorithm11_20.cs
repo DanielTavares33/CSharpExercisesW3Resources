@@ -19,7 +19,7 @@ namespace CSharpExercicesW3Resources
 		/// </summary>
 		public static bool Exercicio12(string str)
 		{
-			return true ? str.Contains("C#") : false;
+			return (str.Length < 3 && str.Equals("C#") || (str.StartsWith("C#") && str[2] == ' '));
 		}
 
 		/// <summary>

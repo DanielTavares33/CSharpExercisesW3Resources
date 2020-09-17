@@ -142,7 +142,6 @@ namespace CSharpExercicesW3Resources
 			return result;
 		}
 
-		// Solução do exercicio do teste Bosch
 		public static int Solution(int N)
 		{
 
