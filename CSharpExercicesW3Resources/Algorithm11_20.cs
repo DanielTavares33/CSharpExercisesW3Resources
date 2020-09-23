@@ -7,14 +7,14 @@ namespace CSharpExercicesW3Resources
 {
 	class Algorithm11_20
 	{
-		static void Main(string[] args)
-		{
-			Console.WriteLine(Exercicio20(78, 95));
-			Console.WriteLine(Exercicio20(25, 35));
-			Console.WriteLine(Exercicio20(40, 50));
-			Console.WriteLine(Exercicio20(55, 60));
-			Console.ReadLine();
-		}
+		//static void Main(string[] args)
+		//{
+		//	Console.WriteLine(Exercicio20(78, 95));
+		//	Console.WriteLine(Exercicio20(25, 35));
+		//	Console.WriteLine(Exercicio20(40, 50));
+		//	Console.WriteLine(Exercicio20(55, 60));
+		//	Console.ReadLine();
+		//}
 
 		/// <summary>
 		/// Write a C# Sharp program to check whether two given integers are in the range 40..50 inclusive, 
