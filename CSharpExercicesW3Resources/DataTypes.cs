@@ -6,11 +6,11 @@ namespace CSharpExercicesW3Resources
 {
 	public class DataTypes
 	{
-		public static void Main(string[] args)
-		{
-			Exercicio10();
-			//Console.ReadLine();
-		}
+		//public static void Main(string[] args)
+		//{
+		//	Exercicio10();
+		//	//Console.ReadLine();
+		//}
 
 		/// <summary>
 		/// Write a C# Sharp program that takes a decimal number as input and displays its equivalent in binary form.
