@@ -4,7 +4,7 @@ using System.Text;
 
 namespace CSharpExercicesW3Resources
 {
-	class Algorithm1_10
+	public class Algorithm1_10
 	{
 		//static void Main(string[] args)
 		//{

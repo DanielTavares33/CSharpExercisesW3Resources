@@ -6,15 +6,20 @@ using System.Text;
 
 namespace CSharpExercicesW3Resources
 {
-	class Algorithim21_30
+	public class Algorithim21_30
 	{
-		static void Main(string[] args)
+		/// <summary>
+		/// Write a C# Sharp program to create a string like "aababcabcd" from a given string "abcd".
+		/// </summary>
+		public string Exercicio30(string str)
 		{
-			Console.WriteLine(Exercicio29("Python"));
-			Console.WriteLine(Exercicio29("PHP"));
-			Console.WriteLine(Exercicio29("JS"));
-			Console.ReadLine();
-			
+			var result = string.Empty;
+
+			for (int i = 0; i < str.Length; i++)
+			{
+				result += str.Substring(0, i + 1);
+			}
+			return result;
 		}
 
 		/// <summary>
