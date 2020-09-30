@@ -2,12 +2,81 @@
 using System.Collections.Generic;
 using System.Collections.Specialized;
 using System.Linq;
+using System.Runtime.InteropServices.WindowsRuntime;
 using System.Text;
 
 namespace CSharpExercicesW3Resources
 {
 	public class Algorithim31_40
 	{
+		/// <summary>
+		/// Write a C# Sharp program to check if a triple is presents in an array of integers or not. 
+		/// If a value appears three times in a row in an array it is called a triple.
+		/// </summary>
+		public static bool Exercicio39(int[] numbers)
+		{
+			int n = 0;
+
+			for (int i = 0; i < numbers.Length - 1; i++)
+			{
+				n = numbers[i];
+				if (n == numbers[i + 1] && n == numbers[i + 2])
+				{
+					return true;
+				}
+			}
+			return false;
+		}
+
+		/// <summary>
+		/// Write a C# Sharp program to count the number of two 5's are next to each other in an array of integers. 
+		/// Also count the situation where the second 5 is actually a 6.
+		/// </summary>
+		public static int Exercicio38(int[] numbers)
+		{
+			int count = 0;
+
+			for (int i = 0; i < numbers.Length - 1; i++)
+			{
+				if (numbers[i] == 5 && (numbers[i + 1] == 5 || numbers[i + 1] == 6))
+				{
+					count++;
+				}
+			}
+			return count;
+		}
+
+		/// <summary>
+		///  Write a C# Sharp program to create a new string of the characters at indexes 0,1, 4,5, 8,9 ... from a given string.
+		/// </summary>
+		public static string Exercicio37(string str)
+		{
+			int[] positions = { 0, 1, 4, 5, 8, 9 };
+
+			StringBuilder stringBuilder = new StringBuilder();
+
+			foreach (int item in positions)
+			{
+				if (item > str.Length - 1) break;
+
+				stringBuilder.Append(str.Substring(item, 1));
+			}
+
+			return stringBuilder.ToString();
+
+			//string result = string.Empty;
+
+			//for (int i = 0; i < str.Length; i += 4)
+			//{
+			//	var c = i + 2;
+			//	var n = 0;
+
+			//	n += c > str.Length ? 1 : 2;
+			//	result += str.Substring(i, n);
+			//}
+
+			//return result;
+		}
 
 		/// <summary>
 		/// Write a C# Sharp program to create a new string from a give string where a specified 
