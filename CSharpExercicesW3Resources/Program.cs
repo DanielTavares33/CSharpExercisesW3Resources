@@ -9,9 +9,9 @@ namespace CSharpExercicesW3Resources
 	{
 		public static void Main(string[] args)
 		{
-			Console.WriteLine(Algorithim31_40.Exercicio39(new[] { 1, 1, 2, 2, 1 }));
-			Console.WriteLine(Algorithim31_40.Exercicio39(new[] { 1, 1, 2, 1, 2, 3 }));
-			Console.WriteLine(Algorithim31_40.Exercicio39(new[] { 1, 1, 1, 2, 2, 2, 1 }));
+			Console.WriteLine(Algorithim41_50.Exercicio43(3));
+			Console.WriteLine(Algorithim41_50.Exercicio43(7));
+			Console.WriteLine(Algorithim41_50.Exercicio43(21));
 			Console.ReadLine();
 		}
 	}

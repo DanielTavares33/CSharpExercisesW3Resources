@@ -10,6 +10,16 @@ namespace CSharpExercicesW3Resources
 	public class Algorithim31_40
 	{
 		/// <summary>
+		/// Write a C# Sharp program to compute the sum of the two given integers. If the sum is in the range 10..20 inclusive return 30.
+		/// </summary>
+		public static int Exercicio40(int n1, int n2)
+		{
+			int sum = n1 + n2;
+
+			return sum >= 10 && sum <= 20 ? 30 : sum;
+		}
+
+		/// <summary>
 		/// Write a C# Sharp program to check if a triple is presents in an array of integers or not. 
 		/// If a value appears three times in a row in an array it is called a triple.
 		/// </summary>
