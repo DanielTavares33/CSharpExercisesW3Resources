@@ -8,6 +8,14 @@ namespace CSharpExercicesW3Resources
 	{
 
 		/// <summary>
+		/// Write a C# Sharp program to check if a given number is within 2 of a multiple of 10.
+		/// </summary>
+		public static bool Exercicio44(int n)
+		{
+			return n % 10 <= 2 || n % 10 >= 8;
+		}
+
+		/// <summary>
 		/// Write a C# Sharp program to check if a given non-negative given number is a multiple of 3 or 7, but not both.
 		/// </summary>
 		public static bool Exercicio43(int n1)
