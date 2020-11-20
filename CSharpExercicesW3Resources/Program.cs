@@ -9,10 +9,7 @@ namespace CSharpExercicesW3Resources
 	{
 		public static void Main(string[] args)
 		{
-			Console.WriteLine(Algorithim41_50.Exercicio50(11, 21, 31));
-			Console.WriteLine(Algorithim41_50.Exercicio50(11, 22, 31));
-			Console.WriteLine(Algorithim41_50.Exercicio50(10, 22, 33));
-			Console.ReadLine();
+			ConditionalStatements.Exercicio7();
 		}
 	}
 }
