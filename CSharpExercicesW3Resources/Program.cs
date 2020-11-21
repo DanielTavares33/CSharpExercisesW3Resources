@@ -9,7 +9,7 @@ namespace CSharpExercicesW3Resources
 	{
 		public static void Main(string[] args)
 		{
-			ConditionalStatements.Exercicio7();
+			ForLoop.Exercicio8();
 		}
 	}
 }
