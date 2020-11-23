@@ -9,7 +9,7 @@ namespace CSharpExercicesW3Resources
 	{
 		public static void Main(string[] args)
 		{
-			Array.Exercicio5();
+			ArrayExercises.Exercicio10();
 		}
 	}
 }
