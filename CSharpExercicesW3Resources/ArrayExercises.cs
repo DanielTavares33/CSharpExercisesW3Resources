@@ -8,6 +8,89 @@ namespace CSharpExercicesW3Resources
 	public class ArrayExercises
 	{
 		/// <summary>
+		/// Write a program in C# Sharp to insert New value in the array (unsorted list ).
+		/// </summary>
+		public static void Exercicio14()
+		{
+			int[] array = { 1, 8, 7, 10 };
+			int[] array2 = new int[array.Length + 1];
+			
+			int value;
+			int position;
+
+			Console.WriteLine("Insert new value to add to the array: ");
+			value = Convert.ToInt32(Console.ReadLine());
+
+			Console.WriteLine("Insert the position where the value should be inserted: ");
+			position = Convert.ToInt32(Console.ReadLine());
+
+			
+
+			foreach (var item in array2)
+			{
+				Console.Write(item);
+			}
+		}
+
+		/// <summary>
+		/// Write a program in C# Sharp to insert New value in the array (sorted list ).
+		/// </summary>
+		public static void Exercicio13()
+		{
+			int[] array = { 5, 7, 9 };
+			int[] array2 = new int[array.Length + 1];
+
+			int number;
+
+			Console.WriteLine("Insert the number to add to the array: ");
+			number = Convert.ToInt32(Console.ReadLine());
+
+			for (int i = 0; i < array.Length; i++)
+			{
+				array2[i] = array[i];
+			}
+
+			array2[array2.Length - 1] = number;
+
+			foreach (var item in array2)
+			{
+				Console.Write(item);
+			}
+		}
+
+		/// <summary>
+		/// Write a program in C# Sharp to sort elements of the array in descending order.
+		/// </summary>
+		public static void Exercicio12()
+		{
+			int[] array = { 5, 9, 1 };
+
+			array = array.OrderByDescending(a => a).ToArray();
+
+			foreach (var item in array)
+			{
+				Console.Write(item);
+			}
+		}
+
+		/// <summary>
+		/// Write a program in C# Sharp to sort elements of array in ascending order.
+		/// </summary>
+		public static void Exercicio11()
+		{
+			int[] array = { 2, 7, 4, 5, 9 };
+
+			///Sort the array in ascending order
+			///and return the array
+			array = array.OrderBy(a => a).ToArray();
+
+			foreach (var item in array)
+			{
+				Console.Write(item);
+			}
+		}
+
+		/// <summary>
 		/// Write a programin C# Sharp to separate odd and even integers in separate arrays.
 		/// </summary>
 		public static void Exercicio10()
