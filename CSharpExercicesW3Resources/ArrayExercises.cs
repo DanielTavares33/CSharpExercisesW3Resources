@@ -7,29 +7,117 @@ namespace CSharpExercicesW3Resources
 {
 	public class ArrayExercises
 	{
+
+		/// <summary>
+		/// Write a program in C# Sharp to find the second smallest element in an array.
+		/// </summary>
+		public static void Exercicio17()
+		{
+			int[] array = { 0,9,4,6,5 };
+			int first, second;
+
+			first = second = int.MaxValue;
+
+			for (int i = 0; i < array.Length; i++)
+			{
+				///If current element is smaller than first then update both first and second
+				if (array[i] < first)
+				{
+					second = first;
+					first = array[i];
+				}
+				else if (array[i] < second && array[i] != first)
+				{
+					second = array[i];
+				}
+			}
+
+			if (second != int.MaxValue)
+			{
+				Console.Write("The second smallest element is: ", second);
+			}
+		}
+
+		/// <summary>
+		/// Write a program in C# Sharp to find the second largest element in an array.
+		/// </summary>
+		public static void Exercicio16()
+		{
+			int[] array = { 2, 9, 1, 4, 6 };
+
+			Array.Sort(array);
+
+			for (int i = array.Length - 2; i >= 0; i--)
+			{
+				if (array[i] != array[array.Length - 1])
+				{
+					Console.WriteLine("The second largest element is {0}\n", array[i]);
+					return;
+				}
+			}
+		}
+
+		/// <summary>
+		/// Write a program in C# Sharp to delete an element at desired position from an array.
+		/// </summary>
+		public static void Exercicio15()
+		{
+			int[] array = { 1, 2, 3, 4, 5 };
+			int position;
+
+			Console.WriteLine("Insert the position that you want to delete: ");
+			position = Convert.ToInt32(Console.ReadLine());
+
+			List<int> list = new List<int>(array);
+			list.RemoveAt(array[position - 1]);
+			array = list.ToArray();
+
+			foreach (var item in array)
+			{
+				Console.WriteLine("{0} ", item);
+			}
+		}
+
 		/// <summary>
 		/// Write a program in C# Sharp to insert New value in the array (unsorted list ).
 		/// </summary>
 		public static void Exercicio14()
 		{
-			int[] array = { 1, 8, 7, 10 };
-			int[] array2 = new int[array.Length + 1];
-			
-			int value;
-			int position;
+			int[] arr1 = new int[10];
+			int i, n, p, x;
 
-			Console.WriteLine("Insert new value to add to the array: ");
-			value = Convert.ToInt32(Console.ReadLine());
-
-			Console.WriteLine("Insert the position where the value should be inserted: ");
-			position = Convert.ToInt32(Console.ReadLine());
-
-			
-
-			foreach (var item in array2)
+			Console.Write("\n\nInsert New value in the unsorted array : \n");
+			Console.Write("-----------------------------------------\n");
+			Console.Write("Input the size of array : ");
+			n = Convert.ToInt32(Console.ReadLine());
+			/* Stored values into the array*/
+			Console.Write("Input {0} elements in the array in ascending order:\n", n);
+			for (i = 0; i < n; i++)
 			{
-				Console.Write(item);
+				Console.Write("element - {0} : ", i);
+				arr1[i] = Convert.ToInt32(Console.ReadLine());
 			}
+
+
+			Console.Write("Input the value to be inserted : ");
+			x = Convert.ToInt32(Console.ReadLine());
+			Console.Write("Input the Position, where the value to be inserted :");
+			p = Convert.ToInt32(Console.ReadLine());
+
+			Console.Write("The current list of the array :\n");
+			for (i = 0; i < n; i++)
+				Console.Write("{0} ", arr1[i]);
+			/* Move all data at right side of the array */
+			for (i = n; i >= p; i--)
+				arr1[i] = arr1[i - 1];
+			/* insert value at given position */
+			arr1[p - 1] = x;
+
+
+			Console.Write("\n\nAfter Insert the element the new list is :\n");
+			for (i = 0; i <= n; i++)
+				Console.Write("{0} ", arr1[i]);
+			Console.Write("\n\n");
 		}
 
 		/// <summary>
