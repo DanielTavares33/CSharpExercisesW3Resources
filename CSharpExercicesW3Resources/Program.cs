@@ -9,7 +9,7 @@ namespace CSharpExercicesW3Resources
 	{
 		public static void Main(string[] args)
 		{
-			ArrayExercises.Exercicio17();
+			ForLoop.Exercicio18();
 		}
 	}
 }
